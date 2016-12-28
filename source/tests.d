@@ -600,9 +600,9 @@ unittest // Peeking NULL values
 unittest // Row life-time
 {
     auto db = Database(":memory:");
-    auto row = db.execute("SELECT 1 AS one").front;
-    assert(row[0].as!long == 1);
-    assert(row["one"].as!long == 1);
+    auto rows = db.execute("SELECT 1 AS one");
+    assert(rows.front[0].as!long == 1);
+    assert(rows.front["one"].as!long == 1);
 }
 
 unittest // PeekMode
@@ -667,7 +667,8 @@ unittest // Row random-access range interface
     }
 
     {
-        auto row = db.execute("SELECT * FROM test").front;
+        auto rows = db.execute("SELECT * FROM test");
+        auto row = rows.front;
         row.popFront();
         auto copy = row.save();
         row.popFront();
