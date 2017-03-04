@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Function Database.run</title>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script>
+		<script type="text/javascript" src="../../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+						<ul class="tree-view">
+							<li class="tree-view">
+								<a href="#" class="package">d2sqlite3</a>
+						<ul class="tree-view">
+							<li>
+								<a href="../../d2sqlite3.html" class=" module">Package members</a>
+							</li>
+							<li>
+								<a href="../../d2sqlite3/database.html" class="selected module">database</a>
+							</li>
+							<li>
+								<a href="../../d2sqlite3/results.html" class=" module">results</a>
+							</li>
+							<li>
+								<a href="../../d2sqlite3/statement.html" class=" module">statement</a>
+							</li>
+						</ul>
+							</li>
+						</ul>
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<p>
+						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+					</p>
+	<ul id="symbolSearchResults" style="display: none"></ul>
+	<script type="application/javascript" src="../../symbols.js"></script>
+	<script type="application/javascript">
+var symbolSearchRootDir = "../../";
+$('#symbolSearchPane').show();
+	</script>
+				</div>
+		</nav>
+		<div id="main-contents">
+			<h1>Function Database.run</h1>
+			<section>
+				<p>Runs an SQL script that can contain multiple statements.
+</p>
+<section></section>
+
+					<section>
+						<h3>Prototype</h3>
+						<div class="prototype">
+							<code class="lang-d">
+<span class="typ">void</span> <span class="pln">run</span><span class="pun">(</span>
+								<br/>
+&nbsp;&nbsp;<span class="typ">string</span> <span class="pln">script</span><span class="pun">,</span>
+								<br/>
+&nbsp;&nbsp;<span class="typ">bool</span> <span class="kwd">delegate</span><span class="pun">(</span><a href="../../d2sqlite3/results/ResultRange.html"><span class="typ">ResultRange</span></a><span class="pun">)</span> <span class="pln">dg</span> <span class="pun">=</span> <span class="kwd">cast</span><span class="pun">(</span><span class="typ">bool </span><span class="kwd">delegate</span><span class="pun">(</span><span class="typ">ResultRange</span><span class="pun">))</span><span class="kwd">null</span>
+								<br/>
+<span class="pun">)</span><span class="pun">;</span>
+							</code>
+						</div>
+					</section>
+<section><h3>Parameters</h3>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="script">script</td><td> The code of the SQL script.
+</td></tr>
+<tr><td id="dg">dg</td><td> A delegate to call for each statement to handle the results. The passed
+        ResultRange will be empty if a statement doesn't return rows. If the delegate
+        return false, the execution is aborted.</td></tr>
+</table>
+</section>
+<section><h3>Example</h3>
+
+<pre class="code"><code class="lang-d"><span class="kwd">auto </span><span class="pln">db </span><span class="pun">= <a href="../../d2sqlite3/database/Database.html"></span><span class="typ">Database</span></a><span class="pun">(</span><span class="str">":memory:"</span><span class="pun">);
+</span><span class="pln">db<wbr/></span><span class="pun">.</span><span class="pln">run</span><span class="pun">(</span><span class="str">`CREATE TABLE test1 (val INTEGER);
+        CREATE TABLE test2 (val FLOAT);
+        DROP TABLE test1;
+        DROP TABLE test2;`</span><span class="pun">);
+
+</span></code></pre>
+</section>
+
+			</section>
+			<section>
+				<h2>Authors</h2>
+<p>Nicolas Sicard (biozic) and other contributors at <a href="https://github.com/biozic/d2sqlite3">https://github.com/biozic/d2sqlite3</a>
+</p>
+
+			</section>
+			<section>
+				<h2>Copyright</h2>
+<p>Copyright 2011-17 Nicolas Sicard.
+</p>
+
+			</section>
+			<section>
+				<h2>License</h2>
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</p>
+
+			</section>
+		</div>
+	</body>
+</html>

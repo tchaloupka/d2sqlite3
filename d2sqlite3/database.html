@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Module d2sqlite3.database</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
+		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+						<ul class="tree-view">
+							<li class="tree-view">
+								<a href="#" class="package">d2sqlite3</a>
+						<ul class="tree-view">
+							<li>
+								<a href="../d2sqlite3.html" class=" module">Package members</a>
+							</li>
+							<li>
+								<a href="../d2sqlite3/database.html" class="selected module">database</a>
+							</li>
+							<li>
+								<a href="../d2sqlite3/results.html" class=" module">results</a>
+							</li>
+							<li>
+								<a href="../d2sqlite3/statement.html" class=" module">statement</a>
+							</li>
+						</ul>
+							</li>
+						</ul>
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<p>
+						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+					</p>
+	<ul id="symbolSearchResults" style="display: none"></ul>
+	<script type="application/javascript" src="../symbols.js"></script>
+	<script type="application/javascript">
+var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();
+	</script>
+				</div>
+		</nav>
+		<div id="main-contents">
+			<h1>Module d2sqlite3.database</h1>
+			<p>This module is part of d2sqlite3.
+</p>
+<section></section>
+
+			<section></section>
+			<section>
+				<h2>Classes</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="SqliteException" class="public" href="../d2sqlite3/database/SqliteException.html">
+								<code>SqliteException</code>
+							</a>
+						</td>
+						<td>Exception thrown when SQLite functions return an error.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Structs</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="Database" class="public" href="../d2sqlite3/database/Database.html">
+								<code>Database</code>
+							</a>
+						</td>
+						<td>An database connection.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Enums</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="Deterministic" class="public" href="../d2sqlite3/database/Deterministic.html">
+								<code>Deterministic</code>
+							</a>
+						</td>
+						<td>A caracteristic of user-defined functions or aggregates.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="SqliteType" class="public" href="../d2sqlite3/database/SqliteType.html">
+								<code>SqliteType</code>
+							</a>
+						</td>
+						<td>SQLite type codes
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Aliases</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="CommitHookDelegate" class="public" href="../d2sqlite3/database/CommitHookDelegate.html">
+								<code>CommitHookDelegate</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="typ">int</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="pun">)</span></code>
+						</td>
+						<td>Delegate types
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="ProfileCallbackDelegate" class="public" href="../d2sqlite3/database/ProfileCallbackDelegate.html">
+								<code>ProfileCallbackDelegate</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="typ">void</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="typ">string</span><span class="pun">, </span><span class="typ">ulong</span><span class="pun">)</span></code>
+						</td>
+						<td>Delegate types
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="ProgressHandlerDelegate" class="public" href="../d2sqlite3/database/ProgressHandlerDelegate.html">
+								<code>ProgressHandlerDelegate</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="typ">int</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="pun">)</span></code>
+						</td>
+						<td>Delegate types
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="RoolbackHookDelegate" class="public" href="../d2sqlite3/database/RoolbackHookDelegate.html">
+								<code>RoolbackHookDelegate</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="typ">void</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="pun">)</span></code>
+						</td>
+						<td>Delegate types
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="TraceCallbackDelegate" class="public" href="../d2sqlite3/database/TraceCallbackDelegate.html">
+								<code>TraceCallbackDelegate</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="typ">void</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="typ">string</span><span class="pun">)</span></code>
+						</td>
+						<td>Delegate types
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="UpdateHookDelegate" class="public" href="../d2sqlite3/database/UpdateHookDelegate.html">
+								<code>UpdateHookDelegate</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="typ">void</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">string</span><span class="pun">, </span><span class="typ">string</span><span class="pun">, </span><span class="typ">long</span><span class="pun">)</span></code>
+						</td>
+						<td>Delegate types
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Authors</h2>
+<p>Nicolas Sicard (biozic) and other contributors at <a href="https://github.com/biozic/d2sqlite3">https://github.com/biozic/d2sqlite3</a>
+</p>
+
+			</section>
+			<section>
+				<h2>Copyright</h2>
+<p>Copyright 2011-17 Nicolas Sicard.
+</p>
+
+			</section>
+			<section>
+				<h2>License</h2>
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</p>
+
+			</section>
+		</div>
+	</body>
+</html>
